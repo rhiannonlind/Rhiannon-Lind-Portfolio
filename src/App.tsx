@@ -1,8 +1,12 @@
 import Home from './components/Home'
+import AboutMe from './components/AboutMe'
 
 function App() {
   return (
-    <Home />
+    <div>
+      <Home />
+      <AboutMe />
+    </div>
   )
 }
 
