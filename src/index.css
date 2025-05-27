@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --color-primary: #ba5a31;    /* Sinopia */
+    --color-secondary: #69dc9e;  /* Emerald */
+    --color-background: #f5f5f7; /* Light Pearl */
+    --color-dark: #333342;       /* Deep Slate */
+    --color-accent: #e59f71;     /* Buff */
+    --color-circle-bg: #e8e8eb;  /* Subtle Grey for Circle */
+
+    /* Typography */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Source Sans Pro', sans-serif;
+    --font-code: 'Fira Code', monospace;
+  }
+
+  /* Base Typography */
+  html {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-dark);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  code, pre {
+    font-family: var(--font-code);
+  }
+}
+
+/* Custom Utility Classes */
+@layer components {
+  .btn-primary {
+    @apply px-10 py-3 text-lg font-medium hover:bg-opacity-90 transition-all;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 9999px;
+    border: 3px solid var(--color-primary);
+  }
+
+  .btn-primary:hover {
+    background-color: var(--color-dark);
+    color: white;
+    border: 3px solid var(--color-dark);
+  }
+
+  .btn-secondary {
+    @apply px-10 py-3 text-lg font-medium hover:bg-opacity-90 transition-all;
+    background-color: transparent;
+    color: var(--color-dark);
+    border: 3px solid var(--color-dark);
+    border-radius: 9999px;
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-dark);
+    color: white;
+    border: 3px solid var(--color-dark);
+  }
+
+  .heading-1 {
+    @apply text-4xl font-bold;
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+  }
+
+  .heading-2 {
+    @apply text-3xl font-semibold;
+    font-family: var(--font-heading);
+    color: var(--color-dark);
+  }
+
+  .heading-3 {
+    @apply text-2xl;
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+  }
+
+  .body-text {
+    @apply text-base;
+    font-family: var(--font-body);
+    color: var(--color-dark);
+  }
+}
