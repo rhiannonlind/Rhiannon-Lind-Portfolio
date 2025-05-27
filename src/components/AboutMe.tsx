@@ -8,7 +8,7 @@ const AboutMe = () => {
         <hr className="my-4 max-w-[150px] mx-auto border-secondary border-2" />
       </div>
       <div className="w-[300px] h-[300px] rounded-full flex items-center justify-center" style={{ backgroundColor: 'var(--color-circle-bg)' }}>
-        <p className="text-white">Hello</p>
+        <img src="/React.svg" alt="React Logo" className="w-1/2" />
       </div>
       <div className="flex col-span-1 flex-col gap-8">
         <div>
