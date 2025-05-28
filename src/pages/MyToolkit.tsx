@@ -4,11 +4,11 @@ import JavaScriptLogo from '../assets/Javascript.png'
 import TypeScriptLogo from '../assets/Typescript.png'
 import TailwindLogo from '../assets/Tailwind.png'
 import CSSHTMLLogo from '../assets/CSS3_HTML5.jpeg'
-import BootstrapLogo from '../assets/Bootstrap.png'
-import SquarespaceLogo from '../assets/Squarespace.png'
+import BootstrapLogo from '../assets/Bootstrap.svg'
+import SquarespaceLogo from '../assets/Squarespace.svg'
 import StoryblokLogo from '../assets/Storyblok.png'
-import FigmaLogo from '../assets/Figma.png'
-import ToolkitItem from './ToolkitItem'
+import FigmaLogo from '../assets/Figma.svg'
+import ToolkitItem from '../components/ToolkitItem'
 
 const MyToolkit = () => {
   return (

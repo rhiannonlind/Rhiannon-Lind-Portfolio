@@ -1,13 +1,15 @@
-import Home from './components/Home'
-import AboutMe from './components/AboutMe'
-import MyToolkit from './components/MyToolkit'
+import Home from './pages/Home'
+import AboutMe from './pages/AboutMe'
+import MyToolkit from './pages/MyToolkit'
+import MyProjects from './pages/MyProjects'
 
 function App() {
   return (
-    <div>
+    <div className="min-h-screen bg-background">
       <Home />
       <AboutMe />
       <MyToolkit />
+      <MyProjects />
     </div>
   )
 }

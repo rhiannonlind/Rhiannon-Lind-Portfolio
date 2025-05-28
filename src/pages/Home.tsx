@@ -1,4 +1,6 @@
-function Home() {
+import React from 'react'
+
+const Home: React.FC = () => {
   return (
     <div className="min-h-screen bg-background p-8">
       <div className="max-w-6xl min-h-screen flex items-center mx-auto">

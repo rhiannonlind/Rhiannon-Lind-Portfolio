@@ -1,0 +1,18 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Project One",
+      "description": "A detailed description of the first project and its key features.",
+      "image": "/src/assets/project1.jpg",
+      "technologies": ["React", "JavaScript", "Tailwind"]
+    },
+    {
+      "id": 2,
+      "title": "Project Two",
+      "description": "Description of the second project highlighting its unique aspects.",
+      "image": "/src/assets/project2.jpg",
+      "technologies": ["TypeScript", "React", "CSS"]
+    }
+  ]
+} 
