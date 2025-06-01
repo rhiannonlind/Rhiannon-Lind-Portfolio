@@ -2,17 +2,30 @@
   "projects": [
     {
       "id": 1,
-      "title": "Project One",
-      "description": "A detailed description of the first project and its key features.",
-      "image": "/src/assets/project1.jpg",
-      "technologies": ["React", "JavaScript", "Tailwind"]
+      "title": "Support Dashboard",
+      "description": "A comprehensive internal staff management platform built with React and Tailwind CSS, featuring an employee directory, IT support ticketing system, and personal task management functionality. Developed using React Hooks and Context API for efficient state management with a responsive, accessible interface that adapts seamlessly across devices. The application includes a dynamic IT request submission workflow with status tracking capabilities and an intuitive task management system with complete CRUD operations that enables staff to efficiently organize and prioritize their responsibilities.",
+      "image": "/src/assets/support-dashboard.png",
+      "technologies": ["React", "JavaScript", "Tailwind"],
+      "websiteUrl": "https://support-dashboard-rhiannon-lind.netlify.app/",
+      "githubUrl": "https://github.com/rhiannonlind/support-dashboard"
     },
     {
       "id": 2,
-      "title": "Project Two",
-      "description": "Description of the second project highlighting its unique aspects.",
-      "image": "/src/assets/project2.jpg",
-      "technologies": ["TypeScript", "React", "CSS"]
+      "title": "Plenum Studios",
+      "description": "A professionally designed Pilates studio website built with Squarespace and custom CSS, featuring responsive layouts and a mobile-first approach. The site includes a custom booking system integration for streamlined class registration and conversion optimization, along with specialized landing pages showcasing studio offerings while maintaining accessibility standards and fast load times.",
+      "image": "/src/assets/plenum-studios.png",
+      "technologies": ["Squarespace", "HTML", "CSS"],
+      "websiteUrl": "https://www.plenumstudio.pt/",
+      "githubUrl": ""
+    },
+    {
+      "id": 3,
+      "title": "Workout Generator",
+      "description": "A dynamic fitness application built with React that generates personalized workout routines based on user preferences and fitness goals. Features an intuitive interface for selecting muscle groups, exercise types, and difficulty levels with real-time workout generation. Developed using modern React patterns with functional components and hooks for efficient state management, delivering a responsive user experience across desktop and mobile devices.",
+      "image": "/src/assets/workout-generator.png",
+      "technologies": ["React", "JavaScript", "Tailwind"],
+      "websiteUrl": "https://workout-generator-rlind.netlify.app/",
+      "githubUrl": "https://github.com/rhiannonlind/workout-generator"
     }
   ]
 } 
