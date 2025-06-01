@@ -9,6 +9,8 @@ import Footer from './components/Footer'
 import BackgroundShapes from './components/BackgroundShapes'
 import CVPopup from './components/CVPopup'
 import Lenis from '@studio-freight/lenis';
+import { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
 
 function App() {
   useEffect(() => {
@@ -30,6 +32,7 @@ function App() {
 
   return (
     <div className="min-h-screen w-full overflow-x-hidden relative">
+      <Toaster />
       <BackgroundShapes />
       <CVPopup />
       <div className="relative z-20">

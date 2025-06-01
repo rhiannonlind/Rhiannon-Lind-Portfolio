@@ -1,10 +1,18 @@
-import React from 'react';
+// Add this at the top of the file or in a .d.ts file if needed
+// declare module 'react-burger-menu';
+import React, { useState } from 'react';
+import { slide as Menu } from 'react-burger-menu';
+import './Header.css';
+
 
 const Header: React.FC = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+      setMenuOpen(false);
     }
   };
 
@@ -15,7 +23,8 @@ const Header: React.FC = () => {
           <div className="text-xl font-bold text-primary">
             Rhiannon Lind's Portfolio
           </div>
-          <nav>
+          {/* Desktop Nav */}
+          <nav className="hidden md:block">
             <ul className="flex space-x-8">
               <li>
                 <button
@@ -59,6 +68,22 @@ const Header: React.FC = () => {
               </li>
             </ul>
           </nav>
+          {/* Burger Menu for Mobile */}
+          <div className="md:hidden">
+            <Menu
+              right
+              isOpen={menuOpen}
+              onStateChange={({ isOpen }: { isOpen: boolean }) => setMenuOpen(isOpen)}
+              width={220}
+            >
+              <div className="bm-header">Rhiannon Lind's Portfolio</div>
+              <button className="bm-item" onClick={() => scrollToSection('home')}>Home</button>
+              <button className="bm-item" onClick={() => scrollToSection('about')}>About Me</button>
+              <button className="bm-item" onClick={() => scrollToSection('toolkit')}>My Toolkit</button>
+              <button className="bm-item" onClick={() => scrollToSection('projects')}>Projects</button>
+              <button className="bm-item" onClick={() => scrollToSection('contact')}>Contact</button>
+            </Menu>
+          </div>
         </div>
       </div>
     </header>

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 // Initialize EmailJS
 emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
@@ -99,6 +100,7 @@ const ContactForm: React.FC = () => {
     } catch (error) {
       console.error('Error sending email:', error);
       setStatus('error');
+      toast.error('Sorry, there was an error sending your message. Please try again later.');
     }
   };
 
