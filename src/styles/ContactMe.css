@@ -1,1 +1,14 @@
 /* Contact Me Page Styles */ 
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 0rem !important;
+    }
+  form .flex.col-1 {
+    flex-direction: column !important;
+  }
+  
+  form .flex.col-1 > div {
+    width: 100% !important;
+  }
+} 

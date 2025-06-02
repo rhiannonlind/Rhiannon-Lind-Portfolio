@@ -106,7 +106,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <form ref={form} onSubmit={handleSubmit} className="max-w-xl mx-auto p-6 bg-white rounded-lg shadow-md mt-16 flex flex-col gap-4">
-      <div className="flex col-1 gap-2">
+      <div className="flex flex-row col-1 gap-2">
         <div className="mb-4 w-1/2">
           <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">
             Name *

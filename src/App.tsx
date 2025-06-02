@@ -10,7 +10,6 @@ import BackgroundShapes from './components/BackgroundShapes'
 import CVPopup from './components/CVPopup'
 import Lenis from '@studio-freight/lenis';
 import { Toaster } from 'react-hot-toast';
-import toast from 'react-hot-toast';
 
 function App() {
   useEffect(() => {

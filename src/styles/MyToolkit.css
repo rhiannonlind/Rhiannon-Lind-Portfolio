@@ -1,1 +1,68 @@
-/* My Toolkit Page Styles */ 
+/* My Toolkit Page Styles */
+
+@media (max-width: 1300px) {
+  .toolkit-heading-1 {
+    font-size: 2.25rem;
+  }
+  .toolkit-btn {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .toolkit-item {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 1040px) {
+    .toolkit-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    }
+  .container {
+    padding: 0 2rem !important;
+  }
+  .toolkit-btn {
+    font-size: 0.9rem;
+    padding: 0.4rem 1.2rem;
+  }
+  .toolkit-heading-1 {
+    font-weight: 600;
+  }
+  .toolkit-item {
+    font-size: 0.98rem;
+  }
+}
+
+@media (max-width: 900px) {
+    .toolkit-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        }
+  .toolkit-img {
+    width: 80px !important;
+    height: 80px !important;
+    max-width: 20vw;
+    max-height: 20vw;
+  }
+  .toolkit-item {
+    font-size: 0.95rem;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 700px) {
+    .toolkit-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+        }
+  .toolkit-img {
+    width: 56px !important;
+    height: 56px !important;
+  }
+  .toolkit-heading-1 {
+    font-size: 1.5rem;
+  }
+  .toolkit-item {
+    font-size: 0.9rem;
+    padding: 0.7rem 0;
+    width: 90vw !important;
+    max-width: 200px;
+  }
+} 
