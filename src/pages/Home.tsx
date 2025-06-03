@@ -23,8 +23,24 @@ const Home: React.FC = () => {
               <h2 className="heading-2 home-heading-2 w-full">Creating engaging web experiences</h2>
             </div>
             <div className="flex gap-6 w-full">
-              <button className="btn-primary min-w-[200px] home-btn">View Projects</button>
-              <button className="btn-secondary min-w-[200px] home-btn">Contact Me</button>
+              <button 
+                className="btn-primary min-w-[200px] home-btn"
+                onClick={() => {
+                  const el = document.getElementById('projects');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                View Projects
+              </button>
+              <button 
+                className="btn-secondary min-w-[200px] home-btn"
+                onClick={() => {
+                  const el = document.getElementById('contact');
+                  if (el) el.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Contact Me
+              </button>
             </div>
           </div>
         </div>
