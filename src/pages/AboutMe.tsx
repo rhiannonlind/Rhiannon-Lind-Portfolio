@@ -1,5 +1,5 @@
 import React from 'react'
-import RhiannonLind from '../assets/rhiannon lind.png'
+import RhiannonLind from '../assets/Rhiannon Lind.png'
 import '../styles/AboutMe.css'
 
 const AboutMe: React.FC = () => {
