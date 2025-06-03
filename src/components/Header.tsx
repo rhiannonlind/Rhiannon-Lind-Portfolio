@@ -59,7 +59,7 @@ const Header: React.FC = () => {
                   className="text-dark hover:text-primary transition-colors whitespace-nowrap"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  Projects
+                  My Projects
                 </button>
               </li>
               <li>
