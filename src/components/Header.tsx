@@ -20,7 +20,7 @@ const Header: React.FC = () => {
     <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-sm z-50 shadow-md">
       <div className="container mx-auto px-8 min-w-full">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-primary whitespace-nowrap" style={{ fontFamily: 'var(--font-heading)' }}>
+          <div className="text-xl font-bold text-primary whitespace-nowrap page-title" style={{ fontFamily: 'var(--font-heading)' }}>
             Rhiannon Lind's Portfolio
           </div>
           {/* Desktop Nav */}

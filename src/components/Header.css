@@ -108,3 +108,9 @@
   word-break: break-word;
   font-family: var(--font-heading) !important;
 } 
+
+@media (max-width: 700px) {
+  .page-title {
+    padding-left: 1rem !important;
+  }
+}
