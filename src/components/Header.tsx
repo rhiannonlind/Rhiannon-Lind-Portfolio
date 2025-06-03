@@ -18,18 +18,19 @@ const Header: React.FC = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 bg-white backdrop-blur-sm z-50 shadow-md">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-8 min-w-full">
         <div className="flex justify-between items-center h-16">
-          <div className="text-xl font-bold text-primary">
+          <div className="text-xl font-bold text-primary whitespace-nowrap" style={{ fontFamily: 'var(--font-heading)' }}>
             Rhiannon Lind's Portfolio
           </div>
           {/* Desktop Nav */}
-          <nav className="hidden md:block">
+          <nav className="hidden md:block ml-8">
             <ul className="flex space-x-8">
               <li>
                 <button
                   onClick={() => scrollToSection('home')}
-                  className="text-dark hover:text-primary transition-colors"
+                  className="text-dark hover:text-primary transition-colors whitespace-nowrap"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Home
                 </button>
@@ -37,7 +38,8 @@ const Header: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('about')}
-                  className="text-dark hover:text-primary transition-colors"
+                  className="text-dark hover:text-primary transition-colors whitespace-nowrap"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   About Me
                 </button>
@@ -45,7 +47,8 @@ const Header: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('toolkit')}
-                  className="text-dark hover:text-primary transition-colors"
+                  className="text-dark hover:text-primary transition-colors whitespace-nowrap"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   My Toolkit
                 </button>
@@ -53,7 +56,8 @@ const Header: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('projects')}
-                  className="text-dark hover:text-primary transition-colors"
+                  className="text-dark hover:text-primary transition-colors whitespace-nowrap"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Projects
                 </button>
@@ -61,7 +65,8 @@ const Header: React.FC = () => {
               <li>
                 <button
                   onClick={() => scrollToSection('contact')}
-                  className="text-dark hover:text-primary transition-colors"
+                  className="text-dark hover:text-primary transition-colors whitespace-nowrap"
+                  style={{ fontFamily: 'var(--font-heading)' }}
                 >
                   Contact
                 </button>

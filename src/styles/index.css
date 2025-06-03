@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Source+Sans+Pro:wght@400;500;600&family=Fira+Code:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 @layer base {
   :root {
@@ -15,9 +15,8 @@
     --color-circle-bg: #e8e8eb;  /* Subtle Grey for Circle */
 
     /* Typography */
-    --font-heading: 'Poppins', sans-serif;
-    --font-body: 'Source Sans Pro', sans-serif;
-    --font-code: 'Fira Code', monospace;
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Open Sans', sans-serif;
   }
 
   /* Base Typography */
@@ -30,20 +29,17 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
   }
-
-  code, pre {
-    font-family: var(--font-code);
-  }
 }
 
 /* Custom Utility Classes */
 @layer components {
   .btn-primary {
-    @apply px-10 py-3 text-lg font-medium hover:bg-opacity-90 transition-all;
+    @apply px-10 py-3 text-lg font-normal hover:bg-opacity-90 transition-all;
     background-color: var(--color-primary);
     color: white;
     border-radius: 9999px;
     border: 2px solid var(--color-primary);
+    font-family: var(--font-body);
   }
 
   .btn-primary:hover {
@@ -53,11 +49,12 @@
   }
 
   .btn-secondary {
-    @apply px-10 py-3 text-lg font-medium hover:bg-opacity-90 transition-all;
+    @apply px-10 py-3 text-lg font-normal hover:bg-opacity-90 transition-all;
     background-color: var(--color-background);
     color: var(--color-dark);
     border: 2px solid var(--color-dark);
     border-radius: 9999px;
+    font-family: var(--font-body);
   }
 
   .btn-secondary:hover {
@@ -67,11 +64,12 @@
   }
 
   .btn-tertiary {
-    @apply px-10 py-3 text-lg font-medium hover:bg-opacity-90 transition-all;
+    @apply px-10 py-3 text-lg font-normal hover:bg-opacity-90 transition-all;
     background-color: white;
     color: var(--color-dark);
     border: 2px solid white;
     border-radius: 9999px;
+    font-family: var(--font-body);
   }
 
   .btn-tertiary:hover {
