@@ -49,20 +49,32 @@
 }
 
 @media (max-width: 700px) {
-    .toolkit-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
-        }
+  .toolkit-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 2rem !important;
+  }
+  .toolkit-item {
+    width: 90vw !important;
+    max-width: 100px !important;
+    min-width: 0 !important;
+    max-height: 100px !important;
+    padding: 0.5rem 0.2rem;
+    font-size: 0.3rem !important;
+  }
   .toolkit-img {
-    width: 56px !important;
-    height: 56px !important;
+    width: 40px !important;
+    height: 40px !important;
+    max-width: 40px;
+    max-height: 40px;
   }
   .toolkit-heading-1 {
     font-size: 1.5rem;
   }
-  .toolkit-item {
-    font-size: 0.9rem;
-    padding: 0.7rem 0;
-    width: 90vw !important;
-    max-width: 200px;
+  .toolkit-item h4.toolkit-heading-4 {
+    font-size: 0.8rem !important;
   }
 } 
