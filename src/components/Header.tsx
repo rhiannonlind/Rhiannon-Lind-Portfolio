@@ -37,11 +37,11 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('about')}
+                  onClick={() => scrollToSection('projects')}
                   className="text-dark hover:text-primary transition-colors whitespace-nowrap"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  About Me
+                  My Projects
                 </button>
               </li>
               <li>
@@ -55,11 +55,11 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <button
-                  onClick={() => scrollToSection('projects')}
+                  onClick={() => scrollToSection('about')}
                   className="text-dark hover:text-primary transition-colors whitespace-nowrap"
                   style={{ fontFamily: 'var(--font-heading)' }}
                 >
-                  My Projects
+                  About Me
                 </button>
               </li>
               <li>

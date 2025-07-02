@@ -38,9 +38,9 @@ function App() {
         <Header />
         <main className="w-full">
           <Home />
-          <AboutMe />
-          <MyToolkit />
           <MyProjects />
+          <MyToolkit />
+          <AboutMe />
           <ContactMe />
         </main>
         <Footer />
