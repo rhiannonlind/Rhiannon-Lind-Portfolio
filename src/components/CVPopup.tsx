@@ -24,7 +24,7 @@ const CVPopup: React.FC = () => {
     // Update the path to your actual CV PDF
     const link = document.createElement('a');
     link.href = '/cv.pdf';
-    link.download = 'Rhiannon-Lind-CV.pdf';
+    link.download = 'Rhiannon Lind - Resume .pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
